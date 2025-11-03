@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT YOU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="overlay">
+        <div class="modal">
+            <button class="close">&times;</button>
+            <h2>Registracija</h2>
+
+            <div class="tabs">
+                <a href="registracija.html" class="tab-link active">Registracija</a>
+                <a href="prijava.html" class="tab-link">Prijava</a>
+            </div>
+
+
+            <div class="social-login">
+                <button class="apple"><img src="apple.svg">Registriraj se z/s Apple</button>
+                <button class="facebook"><img src="facebook.svg">Registriraj se z/s Facebook</button>
+            </div>
+
+            <p class="divider">Ali s svojim e-poštnim naslovom</p>
+
+            <form>
+                <div class="input-group">
+                    <input type="text" placeholder="Ime" required>
+                    <input type="text" placeholder="Priimek" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" placeholder="Tvoj e-poštni naslov" required>
+                    <input type="password" placeholder="Geslo (vsaj 6 znakov)" minlength="6" required>
+                </div>
+
+                <p>Kako naj te naslavljamo?</p>
+                <div class="radio-group">
+                    <label><input type="radio" name="naslov" value="ga"> Ga.</label>
+                    <label><input type="radio" name="naslov" value="g"> G.</label>
+                    <label><input type="radio" name="naslov" value="raznolikost"> Raznolikost</label>
+                    <label><input type="radio" name="naslov" value="nezelim"> Ne želim povedati</label>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="novice">
+                    <label for="novice">Želim prejemati novice od ABOUT YOU o aktualnih trendih, ponudbah in kuponih v
+                        skladu s <a href="#">Pravilnik o zasebnosti</a>.</label>
+                </div>
+                <input type="submit" class="submit-btn" value="Registriraj se zdaj"></input>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
