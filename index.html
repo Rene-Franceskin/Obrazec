@@ -57,9 +57,22 @@
         </div>
     </div>
 
+<script>
+document.querySelector("form").addEventListener("submit", function(e) {
+  e.preventDefault();
+  Swal.fire({
+    title: "Registracija uspešna!",
+    text: "Hvala, ker si se registriral/a",
+    icon: "success",
+    confirmButtonText: "Nadaljuj"
+  }).then(() => {
+    window.location.href = "prijava.html";
+  });
+});
+</script>
 </body>
-
 </html>
+
 
 
 
