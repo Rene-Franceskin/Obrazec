@@ -63,7 +63,14 @@ function ensureSwal() {
   }
   return true;
 }
-
+document.getElementById('credits').addEventListener('click', function(){
+      Swal.fire({
+      icon: 'success',
+      title: 'Avtor',
+      text: 'Rene Frančeškin',
+      heightAuto: false,
+    });
+});
 document.getElementById('regForm').addEventListener('submit', function(e){
   e.preventDefault(); 
 
@@ -121,3 +128,4 @@ document.getElementById('regForm').addEventListener('submit', function(e){
 </script>
 </body>
 </html>
+
