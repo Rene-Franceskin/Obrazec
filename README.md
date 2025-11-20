@@ -40,8 +40,12 @@ Stran si lahko ogledaš tukaj:
 
 Projekt izdelal **Rene Frančeškin** v okviru šolskega projekta.
 
+---
+
 ## Koda za index.html
 <img width="1816" height="964" alt="image" src="https://github.com/user-attachments/assets/d5cfd8fb-057d-4e92-9e2b-5a3adf6faced" />
+
+---
 
 ## Koda za prijava.html
 <img width="1818" height="701" alt="image" src="https://github.com/user-attachments/assets/451f97c0-a593-4203-93e1-07ec6d40a0d4" />
