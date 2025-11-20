@@ -43,11 +43,15 @@ Projekt izdelal **Rene Frančeškin** v okviru šolskega projekta.
 ---
 
 ## Koda za index.html
+<img width="668" height="768" alt="image" src="https://github.com/user-attachments/assets/17a4a2dd-297c-48f5-80d4-c998ff7da952" />
+---
 <img width="1816" height="964" alt="image" src="https://github.com/user-attachments/assets/d5cfd8fb-057d-4e92-9e2b-5a3adf6faced" />
 
 ---
 
 ## Koda za prijava.html
+<img width="604" height="539" alt="image" src="https://github.com/user-attachments/assets/414d64b7-114f-43bd-be7c-d7f8689ee197" />
+---
 <img width="1818" height="701" alt="image" src="https://github.com/user-attachments/assets/451f97c0-a593-4203-93e1-07ec6d40a0d4" />
 
 
