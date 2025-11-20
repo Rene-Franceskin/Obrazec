@@ -74,6 +74,7 @@ document.getElementById('credits').addEventListener('click', function(){
       }
     });
 });
+
 document.getElementById('regForm').addEventListener('submit', function(e){
   e.preventDefault(); 
 
@@ -95,7 +96,7 @@ document.getElementById('regForm').addEventListener('submit', function(e){
       title: 'Napaka!',
       text: 'Prosim izpolni vsa obvezna polja.',
       heightAuto: false,
-      customClass:{
+	  customClass:{
         confirmButton: 'sweetalert'
       }
     });
@@ -108,7 +109,7 @@ document.getElementById('regForm').addEventListener('submit', function(e){
       title: 'Nepravilen email',
       text: 'Prosimo vnesi veljaven e-poštni naslov.',
       heightAuto: false,
-      customClass:{
+	  customClass:{
         confirmButton: 'sweetalert'
       }
     });
@@ -120,7 +121,7 @@ document.getElementById('regForm').addEventListener('submit', function(e){
       title: 'Prekratko geslo',
       text: 'Geslo mora imeti vsaj 6 znakov.',
       heightAuto: false,
-      customClass:{
+	  customClass:{
         confirmButton: 'sweetalert'
       }
     });
@@ -132,7 +133,7 @@ document.getElementById('regForm').addEventListener('submit', function(e){
     text: 'Sedaj boš preusmerjen na prijavo.',
     confirmButtonText: 'V redu',
     heightAuto: false,
-    customClass:{
+	customClass:{
         confirmButton: 'sweetalert'
       }
   }).then(() => {
@@ -143,7 +144,3 @@ document.getElementById('regForm').addEventListener('submit', function(e){
 </script>
 </body>
 </html>
-
-
-
-
