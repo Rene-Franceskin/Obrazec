@@ -53,6 +53,9 @@ document.getElementById('loginForm').addEventListener('submit', function(e){
       title: 'Napaka!',
       text: 'Prosim vnesi oba podatka.',
       heightAuto: false,
+      customClass:{
+        confirmButton: 'sweetalert'
+      }
     });
     return;
   }
@@ -64,6 +67,9 @@ document.getElementById('loginForm').addEventListener('submit', function(e){
       title: 'Dostop zavrnjen',
       text: 'Napačen email ali geslo!',
       heightAuto: false,
+      customClass:{
+        confirmButton: 'sweetalert'
+      }
     });
     return;
   }
@@ -72,6 +78,9 @@ document.getElementById('loginForm').addEventListener('submit', function(e){
     title: 'Prijava uspešna!',
     text: 'Dobrodošel nazaj, admin!',
     heightAuto: false,
+    customClass:{
+        confirmButton: 'sweetalert'
+      }
   }).then(() => {
     window.location.href = "https://www.aboutyou.si/";
   });
@@ -80,3 +89,4 @@ document.getElementById('loginForm').addEventListener('submit', function(e){
 
 </body>
 </html>
+
