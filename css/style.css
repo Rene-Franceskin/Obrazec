@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+@font-face {
+    font-family: "Mark Pro";
+    src: url("fonts/MarkPro.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Mark Pro Fallback";
+    src: url("fonts/MarkProFallback.woff2") format("woff2");
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Mark Pro", "Mark Pro Fallback", sans-serif;
+}
+.hr{
+	margin: 20px -30px ;
+	border: none;
+    border-top: 1px solid #dcdcdc;
+}
+.overlay {
+    background: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background: #fff;
+    border-radius: 10px;
+    width: 500px;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+	font-size: 18px;
+}
+
+img{
+    float: left;
+}
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    width: 300px;
+    margin: 0 auto 30px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.tab-link {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    color: #ccc;
+    border: 1px solid #ccc;
+    display: block;
+    transition: all 0.2s ease;
+    border-radius: 3px;
+}
+
+.tab-link.active {
+    background: #ffffff;
+    color: black;
+    border-color: black;
+    border-radius: 3px;
+}
+
+.tab-link:hover {
+    background: #f2f2f2;
+}
+
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.social-login button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+	width: 300px;
+	display: flex;
+	align-items: center;
+	margin: 0 auto;	
+    border-radius: 3px;
+}
+
+.apple{
+	font-weight: bold; 
+	color: black;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+}
+.facebook{ 
+color: black; 
+font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+	margin-bottom: 5px !important;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #777;
+    font-size: 12px;
+    margin: 20px -30px ;
+}
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #dcdcdc;
+}
+.divider::before {
+    margin-right: 10px;
+}
+.divider::after {
+    margin-left: 10px;
+}
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="radio"] {
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: white;
+    position: relative;
+}
+input[type="radio"]:checked {
+    border: 4px solid #333;
+}
+.radio {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.checkbox {
+    font-size: 12px;
+    margin-top: 15px;
+    line-height: 18px;
+    font-weight: 500;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: no-wrap;
+	align-content: normal;
+	justify-content: normal;
+	align-items: normal;
+	gap: 10px;
+}
+#novice{
+	margin-top:-35px;
+}
+
+.checkbox a {
+    color: rgb(67, 67, 67);
+    text-decoration: underline;
+}
+
+.success {
+    background: #e8f8e8;
+    border: 1px solid #9fd49f;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.cloudflare {
+    float: right;
+    font-size: 12px;
+    color: #666;
+}
+p{
+    font-size: 15px;
+}
+.submit-btn {
+    background: #000;
+    color: #fff;
+    padding: 12px;
+    width: 260px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.submit-btn:hover {
+    background: #333;
+}
+.forgot-password{
+    text-align: right;
+    margin: 10px 0 10px 0;
+}
+.novice{
+	color: rgb(67, 67, 67);
+}
+.forgot-password a{
+    color: #434343;
+    font-weight: bold;
+    text-align: right;
+    text-decoration: none;
+    font-size: 14px;
+}
+.p{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media (max-width:768px){
+    .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+}

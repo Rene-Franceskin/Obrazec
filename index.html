@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ABOUT YOU - Registracija</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+  <div class="overlay">
+    <div class="modal">
+      <button class="close">&times;</button>
+      <h2>Registracija</h2>
+<hr class="hr">
+      <div class="tabs">
+        <a href="registracija.html" class="tab-link active">Registracija</a>
+        <a href="prijava.html" class="tab-link">Prijava</a>
+      </div>
+
+      <div class="social-login">
+        <button class="apple"><img src="img/apple.svg">Registriraj se z/s Apple</button>
+        <button class="facebook"><img src="img/facebook.svg">Registriraj se z/s Facebook</button>
+      </div>
+
+      <p class="divider">Ali s svojim e-poštnim naslovom</p>
+
+      <form id="regForm" novalidate>
+        <div class="input-group">
+          <input id="ime" type="text" placeholder="Ime">
+          <input id="priimek" type="text" placeholder="Priimek">
+        </div>
+        <div class="input-group">
+          <input id="email" type="email" placeholder="Tvoj e-poštni naslov">
+          <input id="geslo" type="password" placeholder="Geslo (vsaj 6 znakov)" minlength="6">
+        </div>
+
+        <p class="p">Kako naj te naslavljamo?</p>
+        <div class="radio-group">
+          <label class="radio"><input type="radio" name="naslov" value="ga"> Ga.</label>
+          <label class="radio"><input type="radio" name="naslov" value="g"> G.</label>
+          <label class="radio"><input type="radio" name="naslov" value="raznolikost"> Raznolikost</label>
+          <label class="radio"><input type="radio" name="naslov" value="nezelim"> Ne želim povedati</label>
+        </div>
+
+        <div class="checkbox">
+          <input type="checkbox" id="novice" required>
+          <label for="novice" class="novice">Želim prejemati novice od ABOUT YOU o aktualnih trendih, ponudbah in kuponih v skladu s <a href="#">Pravilnik o zasebnosti</a>. Svojo privolitev lahko kadarkoli umakneš z učinkom za</label>
+        </div>
+
+        <input type="submit" class="submit-btn" value="Registriraj se zdaj">
+      </form>
+    </div>
+  </div>
+
+<script>
+function ensureSwal() {
+  if (typeof Swal === 'undefined') {
+    console.error('SweetAlert2 ni naložen. Preveri CDN ali povezavo.');
+    return false;
+  }
+  return true;
+}
+
+document.getElementById('regForm').addEventListener('submit', function(e){
+  e.preventDefault(); 
+
+  if (!ensureSwal()) {
+    alert('Napaka: SweetAlert2 ni na voljo. Poglej konzolo (F12).');
+    return;
+  }
+
+  const ime = document.getElementById('ime').value.trim();
+  const priimek = document.getElementById('priimek').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const geslo = document.getElementById('geslo').value;
+  const naslov = document.querySelector('input[name="naslov"]:checked');
+  const novice = document.getElementById('novice').checked;
+
+  if (!ime || !priimek || !email || !geslo || !naslov) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Napaka!',
+      text: 'Prosim izpolni vsa obvezna polja.',
+      heightAuto: false,
+    });
+    return;
+  }
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Nepravilen email',
+      text: 'Prosimo vnesi veljaven e-poštni naslov.',
+      heightAuto: false,
+    });
+    return;
+  }
+  if (geslo.length < 6) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Prekratko geslo',
+      text: 'Geslo mora imeti vsaj 6 znakov.',
+      heightAuto: false,
+    });
+    return;
+  }
+  Swal.fire({
+    icon: 'success',
+    title: 'Registracija uspešna!',
+    text: 'Sedaj boš preusmerjen na prijavo.',
+    confirmButtonText: 'V redu',
+    heightAuto: false
+  }).then(() => {
+    window.location.href = 'prijava.html';
+  });
+
+});
+</script>
+</body>
+</html>

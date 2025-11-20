@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ABOUT YOU - Prijava</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+<div class="overlay">
+  <div class="modal">
+    <button class="close">&times;</button>
+    <h2>Prijava</h2>
+<hr class="hr">
+    <div class="tabs">
+      <a href="index.html" class="tab-link">Registracija</a>
+      <a href="prijava.html" class="tab-link active">Prijava</a>
+    </div>
+
+    <div class="social-login">
+      <button class="apple"><img src="img/apple.svg">Prijavi se z/s Apple</button>
+      <button class="facebook"><img src="img/facebook.svg">Prijavi se z/s Facebook</button>
+    </div>
+
+    <p class="divider">Ali s svojim e-poštnim naslovom</p>
+
+    <form id="loginForm" novalidate>
+      <div class="input-group">
+        <input id="loginEmail" type="email" placeholder="Tvoj e-poštni naslov">
+        <input id="loginPass" type="password" placeholder="Geslo">
+      </div>
+
+      <div class="forgot-password">
+        <a href="#">Pozabljeno geslo?</a>
+      </div>
+
+      <input type="submit" class="submit-btn" value="Prijava">
+    </form>
+  </div>
+</div>
+
+<script>
+document.getElementById('loginForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const email = document.getElementById('loginEmail').value.trim();
+  const geslo = document.getElementById('loginPass').value.trim();
+  if (!email || !geslo) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Napaka!',
+      text: 'Prosim vnesi oba podatka.',
+      heightAuto: false,
+    });
+    return;
+  }
+  const allowedEmail = "admin@gmail.com";
+  const allowedPass  = "admin";
+  if (email !== allowedEmail || geslo !== allowedPass) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Dostop zavrnjen',
+      text: 'Napačen email ali geslo!',
+      heightAuto: false,
+    });
+    return;
+  }
+  Swal.fire({
+    icon: 'success',
+    title: 'Prijava uspešna!',
+    text: 'Dobrodošel nazaj, admin!',
+    heightAuto: false,
+  }).then(() => {
+    window.location.href = "https://www.aboutyou.si/";
+  });
+});
+</script>
+
+</body>
+</html>
