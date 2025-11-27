@@ -1,4 +1,4 @@
-#About You – Prijavni obrazec
+# About You – Prijavni obrazec
 
 Ta projekt predstavlja preprost, moderen in odziven **prijavni obrazec “About You”**, narejen s pomočjo **HTML**, **CSS** in **JavaScript**. Namen obrazca je zbiranje osnovnih informacij o uporabniku na pregleden in prijazen način, ob kliku na gumb za prijavo pa se prikaže moderno obvestilo s pomočjo SweetAlert knjižnice.
 
