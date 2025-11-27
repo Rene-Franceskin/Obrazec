@@ -42,11 +42,11 @@ Projekt izdelal **Rene Frančeškin** v okviru šolskega projekta.
 
 ---
 
-## Koda za index.html
+## Slika za index.html
 <img width="668" height="768" alt="image" src="https://github.com/user-attachments/assets/17a4a2dd-297c-48f5-80d4-c998ff7da952" />
 ---
 
-## Koda za prijava.html
+## Slika za prijava.html
 <img width="604" height="539" alt="image" src="https://github.com/user-attachments/assets/414d64b7-114f-43bd-be7c-d7f8689ee197" />
 
 
