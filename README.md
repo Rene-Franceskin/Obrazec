@@ -34,6 +34,11 @@ Gre za šolski projekt pri predmetu **NSA4**, kjer je bil cilj izdelati delujoč
 Stran si lahko ogledaš tukaj:  
 **https://Rene-Franceskin.github.io/Obrazec/**
 
+Za prijavo v demo lahko uporabiš naslednje podatke:
+
+- **Email:** `admin@gmail.com`  
+- **Geslo:** `admin
+
 ---
 
 ## 📬 Avtor
