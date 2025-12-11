@@ -37,7 +37,7 @@ Stran si lahko ogledaš tukaj:
 Za prijavo v demo lahko uporabiš naslednje podatke:
 
 - **Email:** `admin@gmail.com`  
-- **Geslo:** `admin
+- **Geslo:** `admin`
 
 ---
 
